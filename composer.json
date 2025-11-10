@@ -1,0 +1,41 @@
+{
+    "name": "multilang-cloud-translate/wordpress-plugin",
+    "description": "WordPress multilingual plugin with Google Cloud Translation API v3, Google Cloud Storage, and Cloudflare Workers support",
+    "type": "wordpress-plugin",
+    "version": "1.0.0",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Jessica Kafor",
+            "email": "contact@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "google/cloud-translate": "^1.15",
+        "google/cloud-storage": "^1.30"
+    },
+    "autoload": {
+        "files": [
+            "multilang-cloud-translate.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"echo 'Google Cloud libraries installed successfully!\\n';\""
+        ],
+        "post-update-cmd": [
+            "@php -r \"echo 'Google Cloud libraries updated successfully!\\n';\""
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
