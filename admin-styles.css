@@ -1,0 +1,371 @@
+/**
+ * Admin Styles for Multilang Cloud Translate
+ * 
+ * @package MultilangCloudTranslate
+ * @version 1.0.0
+ */
+
+/* Settings Page Layout */
+.mct-settings-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.mct-settings-wrap h1 {
+    margin-bottom: 20px;
+}
+
+.mct-settings-wrap h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Mode Badge */
+.mct-mode-badge {
+    margin: 20px 0;
+}
+
+.badge {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.badge-cloudflare {
+    background: #f6821f;
+    color: white;
+}
+
+.badge-php {
+    background: #4b5563;
+    color: white;
+}
+
+/* Language Badge */
+.lang-badge {
+    background: #e0e7ff;
+    color: #3730a3;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Translation Logs */
+.mct-logs-container {
+    margin-top: 15px;
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.mct-logs-container table {
+    margin: 0;
+}
+
+.mct-logs-container th {
+    background: #f9fafb;
+    font-weight: 600;
+}
+
+.mct-logs-container td {
+    padding: 12px;
+}
+
+.mct-logs-container a {
+    color: #2271b1;
+    text-decoration: none;
+}
+
+.mct-logs-container a:hover {
+    text-decoration: underline;
+}
+
+/* Statistics Grid */
+.mct-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.mct-stat-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.mct-stat-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.mct-stat-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mct-stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2271b1;
+    margin: 10px 0;
+    line-height: 1;
+}
+
+.mct-stat-label {
+    color: #666;
+    font-size: 13px;
+}
+
+/* System Info Table */
+.mct-settings-wrap table.widefat {
+    margin-top: 15px;
+    background: white;
+    border-radius: 4px;
+}
+
+.mct-settings-wrap table.widefat td {
+    padding: 12px;
+    vertical-align: middle;
+}
+
+.mct-settings-wrap table.widefat strong {
+    font-weight: 600;
+}
+
+/* Form Elements */
+.mct-settings-wrap .form-table {
+    margin-top: 20px;
+}
+
+.mct-settings-wrap .form-table th {
+    padding: 20px 10px 20px 0;
+    font-weight: 600;
+}
+
+.mct-settings-wrap .form-table td {
+    padding: 15px 10px;
+}
+
+.mct-settings-wrap input[type="text"],
+.mct-settings-wrap input[type="number"],
+.mct-settings-wrap select {
+    padding: 8px 12px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.mct-settings-wrap input[type="text"]:focus,
+.mct-settings-wrap input[type="number"]:focus,
+.mct-settings-wrap select:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: none;
+}
+
+.mct-settings-wrap .description {
+    font-size: 13px;
+    color: #646970;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.mct-settings-wrap .button {
+    margin-right: 10px;
+}
+
+.mct-settings-wrap .button-delete {
+    background: #b32d2e;
+    border-color: #b32d2e;
+    color: white;
+}
+
+.mct-settings-wrap .button-delete:hover {
+    background: #8a2424;
+    border-color: #8a2424;
+    color: white;
+}
+
+/* Language Switcher Frontend */
+.mct-language-switcher {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.mct-language-switcher li {
+    margin: 0;
+    padding: 0;
+}
+
+.mct-language-switcher a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #f0f0f1;
+    color: #2c3338;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.mct-language-switcher a:hover {
+    background: #2271b1;
+    color: white;
+}
+
+.mct-language-switcher li.active a {
+    background: #2271b1;
+    color: white;
+}
+
+.mct-language-switcher select {
+    padding: 8px 12px;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Notices */
+.mct-settings-wrap .notice {
+    margin: 20px 0;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .mct-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mct-stat-number {
+        font-size: 28px;
+    }
+    
+    .mct-settings-wrap .form-table th,
+    .mct-settings-wrap .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .mct-language-switcher {
+        flex-direction: column;
+    }
+}
+
+/* Loading Spinner */
+.mct-loading {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #2271b1;
+    border-radius: 50%;
+    animation: mct-spin 1s linear infinite;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@keyframes mct-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success/Error Icons */
+.mct-icon-success {
+    color: #00a32a;
+    font-weight: bold;
+}
+
+.mct-icon-error {
+    color: #d63638;
+    font-weight: bold;
+}
+
+/* Tabs (for future use) */
+.mct-tabs {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.mct-tabs li {
+    display: inline-block;
+    margin: 0 5px -1px 0;
+}
+
+.mct-tabs a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #646970;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background: transparent;
+}
+
+.mct-tabs a:hover {
+    background: #f0f0f1;
+}
+
+.mct-tabs li.active a {
+    background: white;
+    border-color: #ddd;
+    color: #000;
+    font-weight: 600;
+}
+
+/* Code Display */
+.mct-code-block {
+    background: #f6f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    overflow-x: auto;
+    margin: 15px 0;
+}
+
+/* Help Text */
+.mct-help-text {
+    background: #f0f6fc;
+    border-left: 4px solid #2271b1;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.mct-help-text p {
+    margin: 5px 0;
+}
+
+/* Analytics Chart Placeholder */
+.mct-chart-container {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+    height: 300px;
+}
